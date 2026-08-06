@@ -1,0 +1,15 @@
+{
+  "enabled": true,
+  "name": "Format markdown tables",
+  "description": "On Markdown save, normalize GFM tables (separator rows, unescaped pipes). Uses --dirty because Kiro runCommand does not pass the saved file path.",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": ["**/*.md", "**/*.markdown"]
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "python3 .kiro/hooks/format-md-tables.py --dirty",
+    "timeout": 15
+  }
+}

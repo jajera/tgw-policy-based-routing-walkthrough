@@ -1,0 +1,43 @@
+# Markdownlint configuration for TGW Policy-Based Routing documentation site.
+# Rule reference: https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
+#
+# This file records rule exemptions required by the Page_Set (Jekyll + just-the-docs
+# documentation site with CLI examples, long AWS URLs, and SVG diagram includes).
+
+# MD013 - Line length.
+# Disabled: walkthrough CLI commands, AWS documentation URLs, and policy table entries
+# regularly exceed 80 characters. Enforcing wrapping would break copy-pasteable commands
+# and produce unreadable long URLs.
+MD013: false
+
+# MD024 - Allow duplicate headings when under different parent headings.
+# Required for repeated section headings (e.g. "Symptom", "Resolution") under distinct
+# parent headings in troubleshooting, and repeated "Acceptance Criteria" in spec docs.
+MD024:
+  siblings_only: true
+
+# MD033 - Inline HTML.
+# The Page_Set uses <figure> elements to wrap SVG diagram includes for semantic markup.
+# SVG elements (svg, title, desc, defs, marker, polygon, rect, text, line, g, tspan)
+# appear in included diagram files. Allow these structural and SVG elements rather than
+# disabling the rule entirely.
+MD033:
+  allowed_elements:
+    - figure
+    - svg
+    - title
+    - desc
+    - defs
+    - marker
+    - polygon
+    - rect
+    - text
+    - line
+    - g
+    - tspan
+
+# MD041 - First line in file should be a top-level heading.
+# Jekyll front matter (---) precedes headings; the linter sees front matter as the first
+# line. Most markdownlint implementations handle front matter automatically, but this
+# ensures compatibility across versions.
+MD041: false

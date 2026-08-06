@@ -1,0 +1,15 @@
+{
+  "enabled": true,
+  "name": "Format markdown structure",
+  "description": "On Markdown save, fix blank lines around headings/fences and label bare ``` fences. Uses --dirty because Kiro runCommand does not pass the saved file path.",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": ["**/*.md", "**/*.markdown"]
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "python3 .kiro/hooks/format-md-structure.py --dirty",
+    "timeout": 15
+  }
+}
