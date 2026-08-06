@@ -1,0 +1,17 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Format markdown structure",
+      "description": "After Markdown save, fix heading/fence spacing and bare ``` language tags. Prefer {{filePath}} when available.",
+      "trigger": "PostFileSave",
+      "matcher": "\\.(md|markdown)$",
+      "enabled": true,
+      "timeout": 15,
+      "action": {
+        "type": "command",
+        "command": "python3 .kiro/hooks/format-md-structure.py \"{{filePath}}\""
+      }
+    }
+  ]
+}

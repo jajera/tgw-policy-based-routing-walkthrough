@@ -1,0 +1,17 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Format markdown tables",
+      "description": "After Markdown save, normalize GFM tables. Prefer {{filePath}} when available; --dirty is the Kiro-compatible fallback.",
+      "trigger": "PostFileSave",
+      "matcher": "\\.(md|markdown)$",
+      "enabled": true,
+      "timeout": 15,
+      "action": {
+        "type": "command",
+        "command": "python3 .kiro/hooks/format-md-tables.py \"{{filePath}}\""
+      }
+    }
+  ]
+}
