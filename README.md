@@ -16,17 +16,18 @@ different paths. Destination-based routing still runs inside the route table PBR
 
 ## Published site
 
-<https://jajera.github.io/tgw-policy-based-routing-walkthrough/>
+`https://tgw-policy-based-routing-walkthrough.johna.kiwi/`
+(GitHub Pages custom domain; DNS via [`johna-kiwi-infra`](https://github.com/platformfuzz/johna-kiwi-infra) `sites.yaml`).
 
 | Page | Description |
 | ---- | ----------- |
-| [Overview](https://jajera.github.io/tgw-policy-based-routing-walkthrough/) | Lab framing and reading order |
-| [Architecture](https://jajera.github.io/tgw-policy-based-routing-walkthrough/architecture/) | Hub/spoke topology and path map |
-| [Policy Tables](https://jajera.github.io/tgw-policy-based-routing-walkthrough/policy-tables/) | Match criteria and evaluation order |
-| [Use Cases](https://jajera.github.io/tgw-policy-based-routing-walkthrough/use-cases/) | Path selection, inspection, isolation |
-| [Deploy and prove](https://jajera.github.io/tgw-policy-based-routing-walkthrough/walkthrough/) | Apply, prove, tear down |
-| [Troubleshooting](https://jajera.github.io/tgw-policy-based-routing-walkthrough/troubleshooting/) | Failure modes and fixes |
-| [Reference](https://jajera.github.io/tgw-policy-based-routing-walkthrough/reference/) | CLI ↔ EC2 API |
+| [Overview](https://tgw-policy-based-routing-walkthrough.johna.kiwi/) | Lab framing and reading order |
+| [Architecture](https://tgw-policy-based-routing-walkthrough.johna.kiwi/architecture/) | Hub/spoke topology and path map |
+| [Policy Tables](https://tgw-policy-based-routing-walkthrough.johna.kiwi/policy-tables/) | Match criteria and evaluation order |
+| [Use Cases](https://tgw-policy-based-routing-walkthrough.johna.kiwi/use-cases/) | Path selection, inspection, isolation |
+| [Deploy and prove](https://tgw-policy-based-routing-walkthrough.johna.kiwi/walkthrough/) | Apply, prove, tear down |
+| [Troubleshooting](https://tgw-policy-based-routing-walkthrough.johna.kiwi/troubleshooting/) | Failure modes and fixes |
+| [Reference](https://tgw-policy-based-routing-walkthrough.johna.kiwi/reference/) | CLI ↔ EC2 API |
 
 ## Lab repository
 
@@ -41,7 +42,7 @@ terraform init
 terraform apply -auto-approve
 ```
 
-Then follow [Deploy and prove](https://jajera.github.io/tgw-policy-based-routing-walkthrough/walkthrough/).
+Then follow [Deploy and prove](https://tgw-policy-based-routing-walkthrough.johna.kiwi/walkthrough/).
 
 ## Local preview
 
