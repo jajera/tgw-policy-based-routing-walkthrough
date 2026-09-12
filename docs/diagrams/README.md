@@ -1,7 +1,7 @@
 # Diagram Generation
 
 Theme-aware **inline SVG** (same approach as
-[privatelink-conduit](https://jajera.github.io/privatelink-conduit/)). Prefer SVG over
+[privatelink-conduit](https://privatelink-conduit.johna.kiwi/)). Prefer SVG over
 Draw.io here so diagrams inherit `pbr` / `pbr-dark` CSS variables, stay in git as text, and
 need no binary editor.
 

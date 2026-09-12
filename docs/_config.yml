@@ -4,9 +4,12 @@ description: >-
   routing versus Policy-Based Routing with a runnable three-account demo.
 theme: just-the-docs
 
-url: https://jajera.github.io
-baseurl: /tgw-policy-based-routing-walkthrough
+url: https://tgw-policy-based-routing-walkthrough.johna.kiwi
+baseurl: ""
 permalink: pretty
+
+# Shared johna.kiwi measurement ID (guides walkthrough smoke checks this).
+ga_tracking: G-6GP64SX615
 
 heading_anchors: true
 back_to_top: true

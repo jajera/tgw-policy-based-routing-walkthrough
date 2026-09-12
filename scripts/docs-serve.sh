@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-URL="http://127.0.0.1:4000/tgw-policy-based-routing-walkthrough/"
+URL="http://127.0.0.1:4000/"
 
 if command -v docker &>/dev/null; then
   echo "Open ${URL}"
